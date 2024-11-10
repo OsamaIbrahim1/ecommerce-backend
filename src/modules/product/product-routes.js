@@ -21,6 +21,9 @@ router.post("/remove", adminAuth, controller.removeProduct);
 
 router.get("/single", controller.singleProduct);
 
-router.get("/list", controller.listProducts);
+router.get(
+  "/list",
+  controller.listProducts
+);
 
 export default router;

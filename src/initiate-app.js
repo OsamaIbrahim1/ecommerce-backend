@@ -13,9 +13,6 @@ export const initiateApp = (app, express) => {
 
   app.use(cors());
 
-  app.use("/", (req, res, next) => {
-    res.send("Welcome to E-Commerce API");
-  });
   app.use("/api/user", Routers.userRouter);
   app.use("/api/product", Routers.productRouter);
   app.use("/api/cart", Routers.cartRouter);
